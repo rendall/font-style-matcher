@@ -12,3 +12,6 @@ x-heights and widths [[1]](http://helenvholmes.com/writing/type-is-your-right).
 This tool helps you do _exactly_ that.
 
 ![fouc](https://cloud.githubusercontent.com/assets/1369170/20506300/ed61ebac-b007-11e6-8324-df0a90604acd.gif)
+
+## fork
+This is a fork of [@notwaldorf](https://github.com/notwaldorf/font-style-matcher)'s excellent font-style-matcher. This fork makes minor adjustments to the layout, removes the instructions, changes the unit from *px* to *rem*, and changes the default fonts, solely for my own convenience.
