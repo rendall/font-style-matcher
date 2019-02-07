@@ -1,5 +1,6 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
   margin: 0;
 }
@@ -12,14 +13,17 @@ p {
   line-height: 1.8em;
 }
 
-a:link, a:visited, button.actionButton {
-  color: #3F51B5;
+a:link,
+a:visited,
+button.actionButton {
+  color: #3f51b5;
   text-decoration: none;
   padding-bottom: 5px;
   padding-top: 5px;
 }
 
-a:hover, button.actionButton:hover {
+a:hover,
+button.actionButton:hover {
   background-color: #fde100;
   border-radius: 3px;
   text-decoration: none;
@@ -52,12 +56,12 @@ h2 {
   display: flex;
 }
 .columns {
-	display: -ms-flex;
-	display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    background-color: whitesmoke;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: whitesmoke;
 }
 
 .columns > div {
@@ -65,11 +69,9 @@ h2 {
 }
 
 .output > div {
-    min-width: 500px;
-    max-width: 700px;
+  min-width: 500px;
+  max-width: 700px;
 }
-
-
 
 .sample {
   font-weight: normal;
@@ -95,7 +97,7 @@ h2 {
   outline: none;
   margin: 12px 0 20px 0;
   padding-top: 4px;
-  padding-bottom: 5px;  /* so that the 2px focused border doesn't jump */
+  padding-bottom: 5px; /* so that the 2px focused border doesn't jump */
   box-shadow: none;
   box-sizing: content-box;
   font-size: 18px;
@@ -118,7 +120,7 @@ h2 {
 
 .input-field input[type="range"] {
   -webkit-appearance: none;
-  background: #3F51B5;
+  background: #3f51b5;
   padding: 0;
   margin-bottom: 8px;
   height: 2px;
@@ -129,17 +131,17 @@ h2 {
 }
 
 ::-moz-range-track {
-  background: #3F51B5;
+  background: #3f51b5;
   border: 0;
   outline: none;
 }
 
 .input-field input:focus + label {
-  color: #3F51B5;
+  color: #3f51b5;
 }
 
-.input-field input[type=text]:focus {
-  border-bottom: 2px solid #3F51B5;
+.input-field input[type="text"]:focus {
+  border-bottom: 2px solid #3f51b5;
   padding-bottom: 4px;
 }
 
@@ -185,7 +187,7 @@ hr {
 
 .actionButton svg {
   vertical-align: middle;
-  fill: #3F51B5;
+  fill: #3f51b5;
   width: 24px;
   height: 24px;
 }
@@ -232,11 +234,11 @@ hr {
   }
 
   .columns > div {
-  	width: 100%;
+    width: 100%;
   }
 
   .columns > div:first-child {
-  	margin-right: 0px;
+    margin-right: 0px;
     margin-bottom: 40px;
   }
 
@@ -248,7 +250,8 @@ hr {
     left: 0;
   }
 
-  #webfont, #fallback {
+  #webfont,
+  #fallback {
     margin: 0;
   }
 }
