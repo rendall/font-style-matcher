@@ -18,8 +18,8 @@
 
   fallback.style.fontFamily = fallbackOutput.style.fontFamily = fallbackName.value;
   webfont.style.fontFamily = webfontOutput.style.fontFamily = webfontName.value;
-  fallback.style.fontSize = fallbackOutput.style.fontSize = '16px';
-  webfont.style.fontSize = webfontOutput.style.fontSize = '16px';
+  fallback.style.fontSize = fallbackOutput.style.fontSize = '1rem';
+  webfont.style.fontSize = webfontOutput.style.fontSize = '1rem';
   fallback.style.lineHeight = fallbackOutput.style.lineHeight = '1.6';
   webfont.style.lineHeight = webfontOutput.style.lineHeight = '1.6';
   updateClipboardButtons();
@@ -63,7 +63,7 @@
   });
 
   function clearText() {
-    fallbackOutput.style.height = this.offsetHeight + 'px';
+    fallbackOutput.style.height = this.offsetHeight + 'rem';
     fallbackOutput.innerHTML = "";
   }
 
@@ -73,7 +73,7 @@
   }
 
   function updateFontSize(event) {
-    var value = event.target.value + 'px';
+    var value = event.target.value + 'rem';
     var which = event.target.dataset.target;
     updateStyle('font-size', which, value);
     updateStyle('font-size', which + 'Output', value);
@@ -89,7 +89,7 @@
   }
 
   function updateFontSpacing(event) {
-    var value = event.target.value + 'px';
+    var value = event.target.value + 'rem';
     var which = event.target.dataset.target;
     updateStyle('letter-spacing', which, value);
     updateStyle('letter-spacing', which + 'Output', value);
@@ -97,7 +97,7 @@
   }
 
   function updateFontWordSpacing(event) {
-    var value = event.target.value + 'px';
+    var value = event.target.value + 'rem';
     var which = event.target.dataset.target;
     updateStyle('word-spacing', which, value);
     updateStyle('word-spacing', which + 'Output', value);
