@@ -4,13 +4,6 @@ body {
   margin: 0;
 }
 
-
-.container {
-  max-width: 700px;
-  margin: 40px auto 0 auto;
-  padding: 20px;
-}
-
 p {
   color: #434242;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -55,57 +48,28 @@ h2 {
   margin-bottom: 20px;
   font-size: 30px;
 }
-
+.container {
+  display: flex;
+}
 .columns {
 	display: -ms-flex;
 	display: -webkit-flex;
-	display: flex;
-  margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: whitesmoke;
 }
 
 .columns > div {
-	width: 50%;
+  padding: 0 0.5rem;
 }
 
-.columns > div:first-child {
-	margin-right: 20px;
-}
-
-@media (max-width: 500px) {
-  .container {
+.output > div {
+    min-width: 500px;
     max-width: 700px;
-    margin: 20px auto 0 auto;
-    padding: 10px 20px;
-  }
-
-  h1 {
-    font-size: 8.8vw;
-    line-height: 3.5vw;
-    margin-bottom: 20px;
-  }
-
-  .columns {
-    display: block;
-    margin: 0;
-  }
-
-  .columns > div {
-  	width: 100%;
-  }
-
-  .columns > div:first-child {
-  	margin-right: 0px;
-    margin-bottom: 40px;
-  }
-
-  .columns > div:last-child {
-    margin-bottom: 40px;
-  }
-
-  #webfont, #fallback {
-    margin: 0;
-  }
 }
+
+
 
 .sample {
   font-weight: normal;
@@ -129,7 +93,7 @@ h2 {
   border-bottom: 1px solid #9e9e9e;
   border-radius: 0;
   outline: none;
-  margin: 12px 0 60px 0;
+  margin: 12px 0 20px 0;
   padding-top: 4px;
   padding-bottom: 5px;  /* so that the 2px focused border doesn't jump */
   box-shadow: none;
@@ -184,8 +148,8 @@ h2 {
 }
 
 .output {
-  position: relative;
-  min-height: 20px;
+  position: fixed;
+  left: 405px;
 }
 
 .overlap-font {
@@ -245,4 +209,46 @@ hr {
   pointer-events: none;
   transition: opacity 0.2s ease-in-out;
   opacity: 0;
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .output {
+    background-color: white;
+  }
+
+  .output > div {
+    min-width: unset;
+    max-width: unset;
+  }
+
+  .columns {
+    display: block;
+    margin: 50vh 0 0 0;
+    width: 100%;
+  }
+
+  .columns > div {
+  	width: 100%;
+  }
+
+  .columns > div:first-child {
+  	margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .columns > div:last-child {
+    margin-bottom: 40px;
+  }
+
+  .container .output {
+    left: 0;
+  }
+
+  #webfont, #fallback {
+    margin: 0;
+  }
 }
